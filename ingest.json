@@ -1,0 +1,71 @@
+{
+  "asset": "hotel_brendle",
+  "version": "1.0",
+  "floors": [
+    {
+      "id": "F1",
+      "rooms": [
+        { "room": 101, "rtz": "F1_F_01", "zone": "Z-F", "sensors": ["crackmap", "accel", "temp"], "agent": "STRUCT-SCAN" },
+        { "room": 102, "rtz": "F1_F_02", "zone": "Z-F", "sensors": ["crackmap", "accel"], "agent": "STRUCT-SCAN" },
+        { "room": 103, "rtz": "F1_F_03", "zone": "Z-F", "sensors": ["crackmap", "acoustic"], "agent": "STRUCT-SCAN" },
+        { "room": 104, "rtz": "F1_I_04", "zone": "Z-I", "sensors": ["temp", "co2", "occupancy"], "agent": "LOAD-PROFILE" },
+        { "room": 105, "rtz": "F1_I_05", "zone": "Z-I", "sensors": ["temp", "co2"], "agent": "LOAD-PROFILE" },
+        { "room": 106, "rtz": "F1_I_06", "zone": "Z-I", "sensors": ["temp", "airflow"], "agent": "LOAD-PROFILE" },
+        { "room": 107, "rtz": "F1_R_07", "zone": "Z-R", "sensors": ["moisture", "ir", "temp"], "agent": "THERMO-TRACE" },
+        { "room": 108, "rtz": "F1_R_08", "zone": "Z-R", "sensors": ["moisture", "temp"], "agent": "THERMO-TRACE" },
+        { "room": 109, "rtz": "F1_A_09", "zone": "Z-A", "sensors": ["strain", "accel"], "agent": "ANNEX-SHEAR" },
+        { "room": 110, "rtz": "F1_A_10", "zone": "Z-A", "sensors": ["strain"], "agent": "ANNEX-SHEAR" },
+        { "room": 111, "rtz": "F1_S_11", "zone": "Z-S", "sensors": ["flow", "leak", "current"], "agent": "SERVICE-WATCH" },
+        { "room": 112, "rtz": "F1_S_12", "zone": "Z-S", "sensors": ["flow", "leak"], "agent": "SERVICE-WATCH" }
+      ]
+    },
+    {
+      "id": "F2",
+      "rooms": [
+        { "room": 201, "rtz": "F2_F_01", "zone": "Z-F", "sensors": ["crackmap", "accel", "temp"], "agent": "STRUCT-SCAN" },
+        { "room": 202, "rtz": "F2_F_02", "zone": "Z-F", "sensors": ["crackmap", "accel"], "agent": "STRUCT-SCAN" },
+        { "room": 203, "rtz": "F2_F_03", "zone": "Z-F", "sensors": ["crackmap", "acoustic"], "agent": "STRUCT-SCAN" },
+        { "room": 204, "rtz": "F2_I_04", "zone": "Z-I", "sensors": ["temp", "co2", "occupancy"], "agent": "LOAD-PROFILE" },
+        { "room": 205, "rtz": "F2_I_05", "zone": "Z-I", "sensors": ["temp", "co2"], "agent": "LOAD-PROFILE" },
+        { "room": 206, "rtz": "F2_I_06", "zone": "Z-I", "sensors": ["temp", "airflow"], "agent": "LOAD-PROFILE" },
+        { "room": 207, "rtz": "F2_R_07", "zone": "Z-R", "sensors": ["moisture", "ir", "temp"], "agent": "THERMO-TRACE" },
+        { "room": 208, "rtz": "F2_R_08", "zone": "Z-R", "sensors": ["moisture", "temp"], "agent": "THERMO-TRACE" },
+        { "room": 209, "rtz": "F2_A_09", "zone": "Z-A", "sensors": ["strain", "accel"], "agent": "ANNEX-SHEAR" },
+        { "room": 210, "rtz": "F2_A_10", "zone": "Z-A", "sensors": ["strain"], "agent": "ANNEX-SHEAR" },
+        { "room": 211, "rtz": "F2_S_11", "zone": "Z-S", "sensors": ["flow", "leak", "current"], "agent": "SERVICE-WATCH" },
+        { "room": 212, "rtz": "F2_S_12", "zone": "Z-S", "sensors": ["flow", "leak"], "agent": "SERVICE-WATCH" }
+      ]
+    },
+    {
+      "id": "F3",
+      "rooms": [
+        { "room": 301, "rtz": "F3_F_01", "zone": "Z-F", "sensors": ["crackmap", "accel", "temp"], "agent": "STRUCT-SCAN" },
+        { "room": 302, "rtz": "F3_F_02", "zone": "Z-F", "sensors": ["crackmap", "accel"], "agent": "STRUCT-SCAN" },
+        { "room": 303, "rtz": "F3_F_03", "zone": "Z-F", "sensors": ["crackmap", "acoustic"], "agent": "STRUCT-SCAN" },
+        { "room": 304, "rtz": "F3_I_04", "zone": "Z-I", "sensors": ["temp", "co2", "occupancy"], "agent": "LOAD-PROFILE" },
+        { "room": 305, "rtz": "F3_I_05", "zone": "Z-I", "sensors": ["temp", "co2"], "agent": "LOAD-PROFILE" },
+        { "room": 306, "rtz": "F3_I_06", "zone": "Z-I", "sensors": ["temp", "airflow"], "agent": "LOAD-PROFILE" },
+        { "room": 307, "rtz": "F3_R_07", "zone": "Z-R", "sensors": ["moisture", "ir", "temp"], "agent": "THERMO-TRACE" },
+        { "room": 308, "rtz": "F3_R_08", "zone": "Z-R", "sensors": ["moisture", "temp"], "agent": "THERMO-TRACE" },
+        { "room": 309, "rtz": "F3_A_09", "zone": "Z-A", "sensors": ["strain", "accel"], "agent": "ANNEX-SHEAR" },
+        { "room": 310, "rtz": "F3_A_10", "zone": "Z-A", "sensors": ["strain"], "agent": "ANNEX-SHEAR" },
+        { "room": 311, "rtz": "F3_S_11", "zone": "Z-S", "sensors": ["flow", "leak", "current"], "agent": "SERVICE-WATCH" },
+        { "room": 312, "rtz": "F3_S_12", "zone": "Z-S", "sensors": ["flow", "leak"], "agent": "SERVICE-WATCH" }
+      ]
+    }
+  ],
+  "zones": {
+    "Z-F": { "risk": "facade_crack_vibration", "priority": "high" },
+    "Z-R": { "risk": "moisture_thermal", "priority": "high" },
+    "Z-A": { "risk": "lateral_shear", "priority": "medium" },
+    "Z-I": { "risk": "hvac_load", "priority": "medium" },
+    "Z-S": { "risk": "plumbing_electrical", "priority": "high" }
+  },
+  "agents": {
+    "STRUCT-SCAN":  { "trigger": "vibration_spike OR crack_delta>0.5mm" },
+    "THERMO-TRACE": { "trigger": "humidity>70 OR deltaT>3C" },
+    "ANNEX-SHEAR":  { "trigger": "lateral_drift>1.2mm" },
+    "LOAD-PROFILE": { "trigger": "occupancy OR hvac_duty_drift" },
+    "SERVICE-WATCH":{ "trigger": "flow_anomaly OR leak_detect OR current_spike" }
+  }
+}
